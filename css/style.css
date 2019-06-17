@@ -1,20 +1,258 @@
 *,
 *::after,
 *::before {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
 
 body {
-	font-family: "Poppins", sans-serif;
-	font-weight: 400;
-	font-size: 16px;
-	line-height: 1.7;
-	color: #777;
-}
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.7;
+  letter-spacing: 0.03rem;
+  color: #242a30;
+  box-sizing: border-box;
+  line-height: 1.8; }
 
-.header	{
-	height: 95vh;
+.nav {
+  height: 75px;
+  background-color: white;
+  position: sticky;
+  top: 0;
+  position: -webkit-sticky;
+  z-index: 1000;
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222; }
+  .nav--container {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center; }
+  .nav--left {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .nav--left--logo {
+      height: 66px; }
+    .nav--left--name {
+      font-size: 2.5rem;
+      color: #242a30;
+      font-weight: 700; }
+  .nav--right {
+    display: flex;
+    flex-direction: row;
+    align-items: center; }
+    .nav--right--link {
+      color: #58bcb6;
+      text-decoration: none; }
+      .nav--right--link:hover {
+        color: #4da09b; }
+      .nav--right--link:active {
+        transform: translateY(0.1rem); }
 
-}
+.btn:link,
+.btn:visited {
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: .7rem 2rem;
+  display: inline-block;
+  border-radius: 1rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: relative; }
+
+.btn:hover {
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: translateY(0.1rem); }
+
+.btn--green {
+  background-color: #58bcb6;
+  color: white; }
+
+.btn--green:hover {
+  background-color: #4da09b; }
+
+.btn--white {
+  background-color: white;
+  border: 2px solid #58bcb6;
+  color: #58bcb6; }
+
+.btn--white:hover {
+  background-color: #4da09b;
+  border: none;
+  color: white; }
+
+.hero {
+  height: 450px;
+  position: relative;
+  width: 100%;
+  background-color: #655cc9; }
+
+.hero__container {
+  margin: 0 auto;
+  padding: 0 24px;
+  z-index: 100;
+  max-width: 1100px; }
+
+.hero__content-box {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  max-width: 475px; }
+
+.hero__image-container {
+  display: block;
+  width: 50%;
+  height: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../img/hero.png);
+  left: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-size: cover;
+  background-position: center top;
+  clip-path: polygon(7% 0, 100% 0, 100% 100%, 0% 100%); }
+
+.heading-primary {
+  color: white;
+  display: block;
+  font-size: 4.5rem;
+  letter-spacing: .20rem;
+  line-height: 1.4;
+  font-weight: 700; }
+
+.heading-secondary {
+  color: #242a30;
+  font-size: 3rem;
+  text-align: center;
+  width: 100%; }
+
+.heading-description {
+  color: white;
+  font-size: 1.8rem;
+  font-weight: 500;
+  margin-top: 2rem;
+  letter-spacing: 0.05rem; }
+
+.margin-left {
+  margin-left: 4rem; }
+
+.margin-top {
+  margin-top: 4rem; }
+
+.margin-right {
+  margin-right: 4rem; }
+
+.first-panel {
+  background-color: white;
+  padding: 7rem 0; }
+
+.benefits-module {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .benefits-module--card {
+    width: 335px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    padding: 2rem; }
+    .benefits-module--card--green {
+      border: 2.5px solid #58bcb6; }
+    .benefits-module--card--purple {
+      border: 2.5px solid #655cc9; }
+    .benefits-module--card--top {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 2.3rem;
+      align-items: center; }
+      .benefits-module--card--top--image {
+        width: 65px;
+        height: 65px; }
+      .benefits-module--card--top--title {
+        font-size: 2.4rem;
+        letter-spacing: 1.2;
+        font-weight: 300;
+        margin-left: 0.8rem; }
+    .benefits-module--card--link_green {
+      color: #58bcb6;
+      margin-top: 2rem;
+      text-decoration: none;
+      border-bottom: 1px dotted #58bcb6;
+      display: inline; }
+      .benefits-module--card--link_green:hover {
+        color: #4da09b; }
+      .benefits-module--card--link_green:active {
+        transform: translateY(0.1rem); }
+    .benefits-module--card--link_purple {
+      color: #655cc9;
+      margin-top: 2rem;
+      text-decoration: none;
+      border-bottom: 1px dotted #655cc9;
+      display: inline; }
+      .benefits-module--card--link_purple:hover {
+        color: #2e2887; }
+      .benefits-module--card--link_purple:active {
+        transform: translateY(0.1rem); }
+
+.testimonials-module {
+  max-width: 1100px;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+  .testimonials-module--card {
+    width: 335px; }
+    .testimonials-module--card--image_one {
+      width: 100%;
+      height: 200px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)), url(../img/comaradarie_image.png);
+      background-size: cover;
+      background-position: center top; }
+    .testimonials-module--card--image_two {
+      width: 100%;
+      height: 200px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/income_image.png);
+      background-size: cover;
+      background-position: center top; }
+    .testimonials-module--card--image_three {
+      width: 100%;
+      height: 200px;
+      background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(../img/tasks_image.png);
+      background-size: cover;
+      background-position: center top; }
+    .testimonials-module--card--speach_marks {
+      width: 50px; }
+    .testimonials-module--card--description {
+      margin-bottom: 2rem;
+      font-size: 1.5rem;
+      font-style: italic;
+      line-height: 2; }
+    .testimonials-module--card--content_purple {
+      padding: 2rem;
+      background-color: #c6c2fc;
+      border-bottom: 6px solid #655cc9; }
+      .testimonials-module--card--content_purple--name {
+        color: #655cc9;
+        font-weight: 500;
+        font-size: 1.8rem; }
+    .testimonials-module--card--content_green {
+      padding: 2rem;
+      background-color: #bdfcf8;
+      border-bottom: 6px solid #58bcb6; }
+      .testimonials-module--card--content_green--name {
+        color: #58bcb6;
+        font-weight: 500;
+        font-size: 1.8rem; }
