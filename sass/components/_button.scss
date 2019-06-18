@@ -1,0 +1,41 @@
+.btn:link,
+.btn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: .7rem 2rem;
+    display: inline-block;
+    border-radius: 1rem;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: relative; 
+}
+
+.btn:hover {
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); 
+}
+
+.btn:active {
+    transform: translateY(.1rem); 
+}
+
+.btn--green {
+    background-color: $color-primary;
+    color: $color-white; 
+}
+
+.btn--green:hover {
+    background-color: $color-primary-dark; 
+}
+
+.btn--white {
+    background-color: $color-white;
+    border: 2px solid $color-primary;
+    color: $color-primary;
+}
+
+.btn--white:hover {
+    background-color: $color-primary-dark; 
+    border: none;
+    color: $color-white;
+}
