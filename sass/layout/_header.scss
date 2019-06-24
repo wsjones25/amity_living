@@ -8,7 +8,6 @@
 
 .hero__container {
     margin: 0 auto;
-    padding: 0 24px;
     z-index: 100;
     max-width: 1100px;
 }
@@ -24,7 +23,7 @@
 	display: block;
 	width: 50%;
 	height: 100%;
-	background-image: linear-gradient( rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) ), url(../img/hero.png);
+	background-image: linear-gradient( rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2) ), url(../img/hero.png);
     left: 50%;
     position: absolute;
     top: 0;

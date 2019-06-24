@@ -1,5 +1,5 @@
-.btn:link,
-.btn:visited {
+.button:link,
+.btuttonvisited {
     text-transform: uppercase;
     text-decoration: none;
     padding: .7rem 2rem;
@@ -11,30 +11,36 @@
     position: relative; 
 }
 
-.btn:hover {
+.button:hover {
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); 
 }
 
-.btn:active {
+.button:active {
     transform: translateY(.1rem); 
 }
 
 .btn--green {
     background-color: $color-primary;
     color: $color-white; 
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 
 .btn--green:hover {
     background-color: $color-primary-dark; 
 }
 
-.btn--white {
+.button--nav {
     background-color: $color-white;
     border: 2px solid $color-primary;
     color: $color-primary;
+    font-size: 1.5rem !important;
+
+    @media only screen and (max-width: 768px) {
+        margin-top: 2rem;
+    }
 }
 
-.btn--white:hover {
+.btn--nav:hover {
     background-color: $color-primary-dark; 
     border: none;
     color: $color-white;
