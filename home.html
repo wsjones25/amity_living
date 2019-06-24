@@ -8,26 +8,36 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/logo_green.png">
+    <script src="https://kit.fontawesome.com/295edc28d9.js"></script>
 
 	<title>Amity Living | Live together</title>
 </head>
 <body>
 
-	<!-- nav -->
-	<nav class="nav">
-		<div class="nav--container">
-			<div class="nav--left">
-				<img src="img/logo_green.png" alt="Logo" class="nav--left--logo">
-				<div class="nav--left--name">Amity Living</div>
-			</div>
-			<div class="nav--right">
-				<a href="#" class="nav--right--link margin-right">How it works</a>
-				<a href="#" class="nav--right--link margin-right">About</a>
-				<a href="#" class="nav--right--link margin-right">FAQs</a>
-				<a href="#" class="btn btn--white">Get started</a>
-			</div>
+
+	<div class="Nav">
+		<div class="Navbar">
+		   <a href="home.html" class="Navbar__Link-brand">
+			   <img src="img/logo_green.png" alt="Logo" class="footer__left--logo">
+			   <div class="Navbar__Link-brand-name">Amity Living</div>
+		   	
+		   </a>
+			   <!-- <a href="home.html" class="Navbar__Link-brand-name">Amity Living</a> -->
+		   	
+	
+
+		   <div class="Navbar__Link-toggle">
+		     <i class="fas fa-bars"></i>
+		   </div>
+
+		  <nav class="Navbar__Items Navbar__Items--right">
+		    <a href="#" class="Navbar__Link">How it works</a>
+		    <a href="#" class="Navbar__Link">About</a>
+		    <a href="#" class="Navbar__Link margin-right-medium">FAQs</a>
+		    <a href="#" class="button button--nav">Get started</a>
+		  </nav>
 		</div>
-	</nav>
+	</div>
 
 	<!-- First panel -->
     <header class="hero">
@@ -37,7 +47,7 @@
                 <h1 class="heading-primary">Let's live together.</h1>
                 <h2 class="heading-description">We help you find the perfect housemate to share new experiences, to get a helping hand and earn a bit of rent.</h2>
 
-                <a href="#" class="btn btn--green margin-top">Get started</a>
+                <a href="#" class="button btn--green margin-top">Get started</a>
             </div>
         </div>
 
@@ -149,10 +159,12 @@
 		<div class="footer--container">
 			
 			<div class="footer--container--link_column footer--container--link_column--one">
-				<div class="nav--left">
-					<img src="img/logo_white.png" alt="Logo" class="nav--left--logo">
-					<div class="nav--left--name nav--left--name-white">Amity Living</div>
-				</div>
+				
+				<a href="home.html" class="footer__left">
+					<img src="img/logo_white.png" alt="Logo" class="footer__left--logo">
+					<div class="footer__left--name footer__left--name-white">Amity Living</div>		
+				</a>
+			
 			</div>
 
 			<div class="footer--container--link_column footer--container--link_column--two">
@@ -160,6 +172,7 @@
 				<a href="" class="footer--container--link_column--link">About Amity Living</a>
 				<a href="" class="footer--container--link_column--link">How it Works</a>
 				<a href="" class="footer--container--link_column--link">Contact Us</a>
+				<a href="" class="footer--container--link_column--link">Get started</a>
 			</div>
 
 			<div class="footer--container--link_column footer--container--link_column--two">
@@ -171,6 +184,11 @@
 			
 		</div>
 	</footer>
+
+	<script src="javascript/scripts.js"></script>
+
+	
+  </body>
 
 
 </body>
