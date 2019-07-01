@@ -7,9 +7,41 @@
 }
 
 html {
-	font-size: 62.5%;
+	font-size: 62%;
+
+	@include respond(tab-land) {
+		font-size: 62%;
+	}
+
+	@include respond(large-tab-port) {
+		font-size: 60%;
+	}
+
+	@include respond(tab-port) {
+		font-size: 55%;
+	}
+
+	@include respond(small-tab-port) {
+		font-size: 52.5%;
+	}
+
+	@include respond(big-phone) {
+		font-size: 50%;
+	}
+
+	@include respond(phone) {
+		font-size: 47.5%;
+	}
+
+	@include respond(small-phone) {
+		font-size: 45%;
+	}
 }
 
 body {
 	box-sizing: border-box;
+	@include respond(small-tab-port) {
+		padding: 0 2rem;
+	}
+
 }

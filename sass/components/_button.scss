@@ -1,13 +1,11 @@
 .button:link,
-.btuttonvisited {
-    text-transform: uppercase;
+.button:visited {
     text-decoration: none;
     padding: .7rem 2rem;
     display: inline-block;
     border-radius: 1rem;
-    font-size: 1.8rem;
-    font-weight: 500;
-    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-weight: 300;
     position: relative; 
 }
 
@@ -21,7 +19,7 @@
 
 .btn--green {
     background-color: $color-primary;
-    color: $color-white; 
+    color: $color-font-dark; 
     box-shadow: 0 0 15px rgba(0,0,0,0.2);
 }
 

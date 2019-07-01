@@ -1,0 +1,38 @@
+ul {
+    list-style: none
+}
+
+ul li {
+    display: inline-block;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab {
+	max-width: 1100px;
+    margin: 0rem auto 2.25rem auto;
+    display: flex;
+    align-items: center;
+}
+
+.tab a {
+	text-decoration: none;
+	font-size: 1.5rem;
+	color: $color-tertiary-light;
+}
+
+.tab .active a {
+	color: $color-tertiary;
+}
+
+.tab__line {
+	height: 2.5rem;
+	margin-left: .7rem;
+	margin-right: .7rem;
+}

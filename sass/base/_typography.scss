@@ -8,8 +8,7 @@ body {
     line-height: 1.8;
 }
 
-.heading-primary {
-    color: $color-white;
+h1 {
     display: block;
     font-size: 4.5rem;
     letter-spacing: .20rem;
@@ -17,16 +16,19 @@ body {
     font-weight: 700; 
 }
 
-.heading-secondary {
-	color: $color-font-dark;
-	font-size: 3.4rem;
-	font-weight: 400;
-	text-align: center;
-	width: 100%;
+h2 {
+    color: $color-primary;
+    font-size: 3.5rem;
+    font-weight: 500;
+    vertical-align: middle;
+}
+
+.heading-primary {
+    color: $color-white; 
 }
 
 .heading-description {
-    color: $color-white;
+    color: $color-tertiary;
     font-size: 1.8rem;
     font-weight: 500;
     margin-top: 2rem;

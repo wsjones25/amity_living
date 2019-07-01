@@ -1,18 +1,16 @@
 .Nav {
-    background-color: $color-white;
+    background-color: $color-secondary;
     position: sticky; top: 0;
     position: -webkit-sticky;
     z-index: 1000;
     -webkit-box-shadow: 0 4px 6px -6px #222;
     -moz-box-shadow: 0 4px 6px -6px #222;
-    box-shadow: 0 4px 6px -6px #222;
 }
 
 .Navbar {
     display: flex;
     align-items: center;
     padding: 12px 0;
-    color: $color-font-dark;
     max-width: 1100px;
     margin: 0 auto;
 }
@@ -27,16 +25,17 @@
 .Navbar__Link-brand-name {
     font-size: 2.5rem;
     font-weight: 500;
-    color: $color-font-dark;
+    color: $color-white;
 }
 
 .Navbar__Link-brand-logo {
     height: 66px;
+    margin-left: -20px;
 }
 
 .Navbar__Link {
     text-decoration: none;
-    color: $color-font-dark;
+    color: $color-primary;
     text-decoration: none;
     font-size: 1.5rem;
     margin-left: 2rem;
@@ -66,6 +65,8 @@
     color: $color-font-dark;
     text-decoration: none;
     font-size: 1.7rem;
+    width: 50px;
+    margin-top: 5px;
 }
 
 @media only screen and (max-width: 768px) {
@@ -103,6 +104,7 @@
 	    cursor: pointer;
 	}
 }
+
 
 
 

@@ -14,7 +14,7 @@
 			display: flex;
 			flex-direction: column;
 			margin-right: 6rem;
-			color: $color-white;
+			color: $color-font-dark;
 
 			&--one {
 				min-width: 300px;
@@ -32,14 +32,14 @@
 			}
 
 			&--link {
-				color: $color-white;
 				text-decoration: none;
 				font-size: 1.5rem;
 				margin-bottom: 8px;
+				color: $color-font-dark;
 			}
 
-			&--link:hover { 
-				border-bottom: 1px dotted $color-white;
+			&--link:hover span { 
+				border-bottom: 1px dotted $color-font-dark;
 			}
 
 			&--link:active {
@@ -63,10 +63,7 @@
 	&--name {
 		font-size: 2.5rem;
 		color: $color-font-dark;
-	}
-
-	&--name-white {
-		color: $color-white;
+		font-weight: 500;
 	}
 }
 
