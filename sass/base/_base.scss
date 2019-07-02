@@ -40,8 +40,4 @@ html {
 
 body {
 	box-sizing: border-box;
-	@include respond(small-tab-port) {
-		padding: 0 2rem;
-	}
-
 }

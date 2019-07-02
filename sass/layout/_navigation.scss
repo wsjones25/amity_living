@@ -2,16 +2,15 @@
     background-color: $color-secondary;
     position: sticky; top: 0;
     position: -webkit-sticky;
-    z-index: 1000;
+    z-index: 3000;
     -webkit-box-shadow: 0 4px 6px -6px #222;
     -moz-box-shadow: 0 4px 6px -6px #222;
 }
 
 .Navbar {
     display: flex;
-    align-items: center;
-    padding: 12px 0;
-    max-width: 1100px;
+    padding: 1.7rem 3rem;
+    max-width: 1130px;
     margin: 0 auto;
 }
 
@@ -30,7 +29,6 @@
 
 .Navbar__Link-brand-logo {
     height: 66px;
-    margin-left: -20px;
 }
 
 .Navbar__Link {
@@ -38,7 +36,7 @@
     color: $color-primary;
     text-decoration: none;
     font-size: 1.5rem;
-    margin-left: 2rem;
+    margin-right: 2.2rem;
     cursor: pointer;
 
     &:hover {
@@ -57,31 +55,31 @@
 }
 
 .Navbar__Items--right {
-    margin-left:auto;
+    margin-right:auto;
 }
 
 .Navbar__Link-toggle {
     display: none;
-    color: $color-font-dark;
+    color: $color-primary;
     text-decoration: none;
-    font-size: 1.7rem;
+    font-size: 2.6rem;
     width: 50px;
     margin-top: 5px;
 }
 
 @media only screen and (max-width: 768px) {
     .Navbar {
-    	padding: 12px 1rem;
+    	padding: 12px 3rem;
     }
 
     .Navbar__Items,
     .Navbar {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: flex-start;
     }
 
     .Navbar__Link {
- 	     margin-left: 0;
+ 	     margin-top: 1rem;
     }
     
     .Navbar__Items {
@@ -90,7 +88,7 @@
     }
     
 	.Navbar__Items--right {
-	    margin-left:0;
+	    margin-right: 0;
 	}
 	    
 	.Navbar__ToggleShow {
@@ -102,12 +100,6 @@
 	    display: initial;
 	    position: absolute;
 	    cursor: pointer;
+        top: 3rem;
 	}
 }
-
-
-
-
-
-
-
