@@ -19,9 +19,14 @@ h1 {
 
 h2 {
     color: $color-primary;
-    font-size: 3.5rem;
+    font-size: 4rem;
     font-weight: 500;
+    line-height: 120%;
     vertical-align: middle;
+
+    @include respond (big-phone) {
+        text-align: center;
+    }
 }
 
 .heading-primary {
@@ -34,4 +39,5 @@ h2 {
     font-weight: 500;
     margin-top: 2rem;
     letter-spacing: 0.05rem;
+    line-height: 160%;
 }

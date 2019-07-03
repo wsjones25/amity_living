@@ -1,5 +1,117 @@
-.Nav {
-    background-color: $color-secondary;
+// .Nav {
+//     background-color: $color-secondary;
+//     position: sticky; top: 0;
+//     position: -webkit-sticky;
+//     z-index: 3000;
+//     -webkit-box-shadow: 0 4px 6px -6px #222;
+//     -moz-box-shadow: 0 4px 6px -6px #222;
+// }
+
+// .Navbar {
+//     display: flex;
+//     padding: 1.7rem 3rem;
+//     max-width: 1130px;
+//     margin: 0 auto;
+// }
+
+// .Navbar__Link-brand {
+// 	text-decoration: none;
+// 	cursor: pointer;
+//     height: 50px;
+
+//     @include respond (tab-port) {
+//         height: 40px;
+//     }
+
+//     @include respond (big-phone) {
+//         height: 30px;
+//     }
+
+//     &--logo {
+//         height: 100%;
+//     }
+// }
+
+// .Navbar__Link {
+//     text-decoration: none;
+//     color: $color-primary;
+//     text-decoration: none;
+//     font-size: 1.4rem;
+//     margin-right: 2.2rem;
+//     cursor: pointer;
+
+//     &:hover {
+// 	    color: $color-primary-dark; 
+// 	    border-bottom: 1px dotted $color-primary-dark;
+//     }
+
+//     &:active {
+// 	    transform: translateY(.1rem); 
+//     }
+// }
+
+// .Navbar__Items {
+//     display: flex;
+//     align-items: center;
+// }
+
+// .Navbar__Items--right {
+//     margin-right:auto;
+// }
+
+// .Navbar__Link-toggle {
+//     display: none;
+//     color: $color-primary;
+//     text-decoration: none;
+//     font-size: 2.6rem;
+//     width: 50px;
+
+//     &:hover {
+//         color: color-primary-dark;
+//     }
+// }
+
+// @media only screen and (max-width: 768px) {
+//     .Navbar {
+//     	padding: 12px 3rem;
+//     }
+
+//     .Navbar__Items,
+//     .Navbar {
+//         flex-direction: column-reverse;
+//         align-items: flex-end;
+//     }
+
+//     .Navbar__Link {
+//  	     margin-top: 1rem;
+//     }
+    
+//     .Navbar__Items {
+//         display:none;
+//         margin-top: 2rem;
+//     }
+    
+// 	.Navbar__Items--right {
+// 	    margin-right: 0;
+// 	}
+	    
+// 	.Navbar__ToggleShow {
+// 	    display: flex;
+// 	}
+    
+// 	.Navbar__Link-toggle {
+//         position: absolute;
+// 	    align-self: flex-start;
+// 	    display: initial !important;
+// 	    cursor: pointer;
+//         top: 1.8rem;
+// 	}
+// }
+
+.navigation {
+    background: $color-secondary;
+    height: 70px;
+    z-index: 1;
     position: sticky; top: 0;
     position: -webkit-sticky;
     z-index: 3000;
@@ -7,99 +119,149 @@
     -moz-box-shadow: 0 4px 6px -6px #222;
 }
 
-.Navbar {
-    display: flex;
-    padding: 1.7rem 3rem;
+nav {
     max-width: 1130px;
     margin: 0 auto;
+    padding: 0 3rem;
 }
 
-.Navbar__Link-brand {
-	display: flex;
-    align-items: center;
-	text-decoration: none;
-	cursor: pointer;
+nav #brand {
+  float: right;
+  display: block;
+  font-size: 3rem;
+  line-height: 70px;
+  font-weight: bold;
 }
 
-.Navbar__Link-brand-name {
-    font-size: 2.5rem;
-    font-weight: 500;
-    color: $color-white;
+nav #brand a {
+  color: #fff;
+  transition: all 0.3s ease-out;
 }
 
-.Navbar__Link-brand-logo {
-    height: 66px;
+nav #brand a:hover {
+  color: $color-tertiary;
 }
 
-.Navbar__Link {
-    text-decoration: none;
-    color: $color-primary;
-    text-decoration: none;
-    font-size: 1.5rem;
-    margin-right: 2.2rem;
-    cursor: pointer;
-
-    &:hover {
-	    color: $color-primary-dark; 
-	    border-bottom: 1px dotted $color-primary-dark;
-    }
-
-    &:active {
-	    transform: translateY(.1rem); 
-    }
+nav #menu {
+  float: left;
+  position: relative;
 }
 
-.Navbar__Items {
-    display: flex;
-    align-items: center;
+nav #menu li {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-right: 4rem;
+  cursor: pointer;
+  line-height: 70px;
+  position: relative;
+  transition: all 0.3s ease-out;
 }
 
-.Navbar__Items--right {
-    margin-right:auto;
+nav #menu li a {
+  color: $color-primary;
 }
 
-.Navbar__Link-toggle {
+nav #menu li a:hover {
+  color: $color-primary-dark;
+  border-bottom: 1px dotted $color-primary-dark
+}
+
+#toggle {
+  position: absolute;
+  left:  10px;
+  top: 14px;
+  z-index: 999;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  float: right;
+  transition: all 0.3s ease-out;
+  visibility: hidden;
+  opacity: 0;
+}
+
+#toggle .span {
+  height: 7px;
+  background: $color-primary;
+  margin: 5px auto;
+  backface-visibility: hidden;
+}
+
+#toggle.on #one {
+  transform: rotate(45deg) translateX(6px) translateY(6px);
+}
+
+#toggle.on #two {
+  opacity: 0;
+}
+
+#toggle.on #three {
+  transform: rotate(-45deg) translateX(10px) translateY(-12px);
+}
+
+#resize {
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  transition: all 0.3s ease-out;
+  display: table;
+}
+
+#resize #menu {
+  height: 50px;
+  display: table-cell;
+  vertical-align: middle;
+  background-color: $color-secondary;
+}
+
+#resize #menu li {
+  display: block;
+  margin: 0;
+  text-align: center;
+  padding: 20px 0;
+  text-align: center;
+  font-size: 2rem;
+  min-height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+
+#resize #menu li:hover {
+  background: $color-white;
+}
+
+#resize #menu li:hover a {
+  color: $color-primary;
+  transition: all 0.3s ease-out;
+}
+
+#resize #menu li a {
+  color: $color-primary;
+}
+
+#resize.active {
+  visibility: visible;
+}
+
+@media (max-width: 768px) {
+  #toggle {
+    visibility: visible;
+    opacity: 1;
+  }
+  nav #menu {
     display: none;
-    color: $color-primary;
-    text-decoration: none;
-    font-size: 2.6rem;
-    width: 50px;
-    margin-top: 5px;
+  }
 }
 
-@media only screen and (max-width: 768px) {
-    .Navbar {
-    	padding: 12px 3rem;
-    }
-
-    .Navbar__Items,
-    .Navbar {
-        flex-direction: column-reverse;
-        align-items: flex-start;
-    }
-
-    .Navbar__Link {
- 	     margin-top: 1rem;
-    }
-    
-    .Navbar__Items {
-        display:none;
-        margin-top: 2rem;
-    }
-    
-	.Navbar__Items--right {
-	    margin-right: 0;
-	}
-	    
-	.Navbar__ToggleShow {
-	    display: flex;
-	}
-    
-	.Navbar__Link-toggle {
-	    align-self: flex-end;
-	    display: initial;
-	    position: absolute;
-	    cursor: pointer;
-        top: 3rem;
-	}
+@media (min-width: 768px) {
+  #resize {
+    visibility: hidden !important;
+  }
 }
+
+
+

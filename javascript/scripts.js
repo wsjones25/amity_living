@@ -1,13 +1,3 @@
-// Nav hamburgher
-function classToggle() {
-  const navs = document.querySelectorAll('.Navbar__Items')
-  
-  navs.forEach(nav => nav.classList.toggle('Navbar__ToggleShow'));
-}
-
-document.querySelector('.Navbar__Link-toggle')
-  .addEventListener('click', classToggle);
-
 // Tab
 (function(){
 	function onTabClick(event){
@@ -26,3 +16,13 @@ document.querySelector('.Navbar__Link-toggle')
 	var el = document.getElementById('nav-tab');
 	el.addEventListener('click', onTabClick, false);
 })();
+
+//Nav
+$(function() {
+  
+  $("#toggle").click(function() {
+    $(this).toggleClass("on");
+    $("#resize").toggleClass("active");
+  });
+  
+});

@@ -1,0 +1,26 @@
+.white-block {
+	width: 20%;
+	position: absolute;
+	bottom: 26px;
+	right: 0;
+	height: 26px;
+	background-color: $color-white;
+}
+
+.orange-block {
+	width: 35%;
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	height: 26px;
+	background-color: $color-tertiary;
+}
+
+.green-block {
+	width: 30%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	height: 26px;
+	background-color: $color-primary;
+}

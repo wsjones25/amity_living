@@ -14,44 +14,49 @@
 </head>
 <body>
 
+	<!-- Nav -->
 
-	<div class="Nav">
-		<div class="Navbar">
-		    <!-- <a href="home.html" class="Navbar__Link-brand">
-			    <img src="img/logo_green.png" alt="Logo" class="footer__left--logo margin-right-small">
-			    <div class="Navbar__Link-brand-name">My Homeshare</div>
-		    </a> -->
+	<div class="navigation">
+		<nav>
 
-		    
-		
-		    <div class="Navbar__Link-toggle">
-		        <i class="fas fa-bars"></i>
-		     </div>
+		  <div id="toggle">
+		    <div class="span" id="one"></div>
+		    <div class="span" id="two"></div>
+		    <div class="span" id="three"></div>
+		  </div>
+		  <span id="brand">
+		    <a href="home.html">My Homeshare</a>
+		  </span>
+		  <ul id="menu">
+		    <li><a href="javascript:;">How it works</a></li>
+		    <li><a href="javascript:;">About</a></li>
+		    <li><a href="javascript:;">FAQs</a></li>
+		    <li><a href="javascript:;">Get started</a></li>
+		  </ul>
+		</nav>
 
-		    <nav class="Navbar__Items Navbar__Items--right">
-		        <a href="#" class="Navbar__Link">How it works</a>
-		        <a href="#" class="Navbar__Link">About</a>
-		        <a href="#" class="Navbar__Link">FAQs</a>
-		        <a href="#" class="Navbar__Link">Get started</a>
-		    </nav>
-
-		    <a href="home.html" class="Navbar__Link-brand">
-		        <img src="img/my_homeshare_logo.png" alt="Logo" class="footer__left--logo">
-		  </a>
-
+		<div id="resize">
+		  <ul id="menu">
+		    <li><a href="javascript:;">Home</a></li>
+		    <li><a href="javascript:;">About</a></li>
+		    <li><a href="javascript:;">FAQs</a></li>
+		    <li><a href="javascript:;">Get started</a></li>
+		    <li><a href="javascript:;">Contact us</a></li>
+		  </ul>
 		</div>
+		
 	</div>
+
+
 
 	<!-- Hero panel -->
 
     <header class="hero">
-        
         <div class="hero__container">
-            
 			<div class="hero__container__card hero__container__card--left">
 	            <div class="hero__container__card--left--content">
-	                <h1 class="heading-primary">Let's live together.</h1>
-	                <h2 class="heading-description">We help you find the perfect housemate to share new experiences, to get a helping hand and earn a bit of rent.</h2>
+	                <h1 class="heading-primary">Live together.</h1>
+	                <h2 class="heading-description">We help you find the perfect housemate to share new experiences and get a helping hand.</h2>
 
 	                <a href="#" class="button btn--green margin-top-medium">
 	                	<span>Get started</span>
@@ -60,17 +65,17 @@
 			</div>
 
 	        <div class="hero__container__card hero__container__card--right"></div>
-        </div>
-
-    
+        </div>    
+        <div class="white-block"></div>
+        <div class="orange-block"></div>
     </header>
 
 	<!-- First panel -->
 	<div class="first-panel">
+		<div class="green-block"></div>
 		<div class="first-panel__container">
 			<div class="heading">
 				<h2>What homesharing offers</h2>
-				<img src="img/line_green.png" class="heading__line">
 			</div>
 
 		    <ul id="nav-tab" class="tab">
@@ -223,7 +228,6 @@
 	<div class="info-module">
 		<div class="heading">
 			<h2>Interested in learning more?</h2>
-			<img src="img/line_green.png" class="heading__line">
 		</div>
 
 		<div class="benefits-module" id="info-module-container">
@@ -250,19 +254,28 @@
 
 
 	<!-- Footer -->
-	<footer class="footer">
-		<div class="footer--container">
-			<div class="footer--container--link_column footer--container--link_column--one">
+	<footer class="footer-top">
+		<div class="footer-top__container">
+			<a href="" class="footer__top--contact"><span>0203 432 2345</span></a>
+			<a href="" class="footer__top--link"><span>My Homeshare</span></a>
+			<a href="" class="footer__top--link"><span>How it Works</span></a>
+			<a href="" class="footer__top--link"><span>Contact Us</span></a>
+			<a href="" class="footer__top--link"><span>Get started</span></a>
+		</div>
+
+
+
+
+
+		<!-- <div class="footer--container">
 				
 				<a href="home.html" class="footer__left">
-					<img src="img/logo_white.png" alt="Logo" class="footer__left--logo margin-right-small">
-					<div class="footer__left--name">My Homeshare</div>		
+					<div class="footer__left--name">My Homeshare</div>
 				</a>
 			
-			</div>
+			
 
 			<div class="footer--container--link_column footer--container--link_column--two">
-				<div class="footer--container--link_column--link_title">Company</div>
 				<a href="" class="footer--container--link_column--link"><span>About My Homeshare</span></a>
 				<a href="" class="footer--container--link_column--link"><span>How it Works</span></a>
 				<a href="" class="footer--container--link_column--link"><span>Contact Us</span></a>
@@ -270,17 +283,16 @@
 			</div>
 
 			<div class="footer--container--link_column footer--container--link_column--two">
-				<div class="footer--container--link_column--link_title"><span>Resources</span></div>
 				<a href="" class="footer--container--link_column--link"><span>FAQs</span></a>
 				<a href="" class="footer--container--link_column--link"><span>Privacy Policy</span></a>
 				<a href="" class="footer--container--link_column--link"><span>Terms & Conditions</span></a>
 			</div>
 			
-		</div>
+		</div> -->
 	</footer>
-
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script src="javascript/scripts.js"></script>
 
-	
   </body>
 </html>
