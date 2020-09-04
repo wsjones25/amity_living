@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/wsjones25/amity_living#readme",
   "devDependencies": {
-    "node-sass": "^4.12.0"
+    "node-sass": "^4.13.1"
   }
 }
